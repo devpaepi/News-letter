@@ -223,3 +223,51 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+
+/* mobile design */
+@media (max-width: 700px) {
+  body {
+    height: 100vh;
+    width: auto;
+
+    /* flex-direction: row; */
+    overflow-y: scroll;
+  }
+  .container {
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  button {
+    margin-bottom: 40px;
+  }
+
+  .illustration {
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  #successMessage {
+    background-color: var(--White);
+    height: 100%;
+    width: auto;
+    box-sizing: border-box;
+    padding-top: 150px;
+    border-radius: 0;
+
+    display: flex;
+    /* flex-direction: column; */
+    animation: bounce-alt-in 0.5s ease forwards;
+    /* flex-grow: 0; */
+  }
+
+  #dismiss-btn {
+    margin-top: 150px;
+    height: 100px;
+  }
+}

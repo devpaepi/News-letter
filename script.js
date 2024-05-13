@@ -20,5 +20,6 @@ document.getElementById("dismiss-btn").addEventListener("click", function () {
   document.getElementById("mainss").style.display = "none";
   document.getElementById("first").style.display = "flex";
   document.getElementById("user-email").value = ""; // Clear the input field
-  document.getElementById("user-email").classList.add("hidden");
+  document.getElementById("user-email").classList.remove("invalid");
+  document.getElementById("errorMessage").classList.add("hidden");
 });

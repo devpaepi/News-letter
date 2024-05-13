@@ -22,21 +22,41 @@
   <body>
     <!-- Sign-up form start -->
 
-    <div class="container">
+    <div class="container" id="first">
       <section class="form">
         <h1>Stay updated!</h1>
         <span>Join 60,000+ product managers receiving monthly updates on:</span>
         <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
+          <li>
+            <img src="./assets/images/icon-list.svg" />
+
+            Product discovery and building what matters
+          </li>
+
+          <li>
+            <img src="./assets/images/icon-list.svg" />
+            Measuring to ensure updates are a success
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" />
+            And much more!
+          </li>
         </ul>
         <section class="input">
-          <span> Email address </span>
-          <input type="email" name="" placeholder="email@company.com" />
-        </section>
+          <div class="pla-err">
+            <div class="email">Email address</div>
+            <p id="errorMessage" class="hidden">Valid email required</p>
+          </div>
 
-        <button>Subscribe to monthly newsletter</button>
+          <input
+            type="email"
+            name=""
+            placeholder="email@company.com"
+            id="user-email"
+            class=""
+          />
+          <button id="submit-btn">Subscribe to monthly newsletter</button>
+        </section>
       </section>
       <section class="illustration">
         <!-- <img
@@ -50,10 +70,18 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
-    <!-- Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
+    <div class="hidden" id="mainss">
+      <div class="" id="successMessage">
+        <img class="s-icon" src="./assets/images/icon-success.svg" alt="" />
+        <h1>Thanks for subscribing!</h1>
+        <span>
+          A confirmation email has been sent to
+          <span style="font-weight: 700" id="submitted-email"></span>. Please
+          open it and click the button inside to confirm your subscription.
+        </span>
+        <button id="dismiss-btn">Dismiss Message</button>
+      </div>
+    </div>
 
     <!-- Success message end -->
 

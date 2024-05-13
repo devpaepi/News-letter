@@ -2,13 +2,17 @@
   display: none;
 }
 
-/* .attribution {
+.attribution {
   font-size: 11px;
   text-align: center;
+  color: azure;
+
+  position: absolute;
+  bottom: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+}
 
 :root {
   --primary-color: #007bff;
@@ -269,5 +273,9 @@ button {
   #dismiss-btn {
     margin-top: 150px;
     height: 100px;
+  }
+
+  .attribution {
+    color: var(--DarkGrey);
   }
 }
